@@ -1,0 +1,511 @@
+/* ******************** */
+/* BELOW 1344PX (Smaller Desktops) */
+/* ******************** */
+@media (max-width: 85em) {
+  html {
+    font-size: 56.25%;
+  }
+  .heading-primary {
+    font-size: 6.2rem;
+  }
+
+  .how-features {
+    padding: 3.2rem;
+  }
+
+  .market-img {
+    width: 100%;
+  }
+
+  .section-market .heading-secondary {
+    font-size: 3.8rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .market-text-1 {
+    font-size: 1.6rem;
+  }
+
+  .section-market .grid {
+    gap: 1.2rem;
+  }
+
+  .market-text-2 {
+    font-size: 1.8rem;
+  }
+  .market-text-3 {
+    font-size: 1.4rem;
+  }
+
+  .testimonial-container {
+    gap: 4.6rem;
+  }
+
+  .testimonial-img {
+    width: 100%;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    padding: 2rem;
+  }
+
+  .review-container {
+    padding: 7rem 13rem;
+  }
+
+  .rev-description {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
+  .review-img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .rev-icon {
+    font-size: 1rem;
+    margin-right: 0.2rem;
+  }
+
+  .container {
+    padding: 0 9.8rem;
+  }
+
+  .how-2-icons {
+    justify-items: center;
+    gap: 5rem;
+    padding: 0;
+  }
+
+  .how2-imgs {
+    width: 100%;
+  }
+
+  .how-icon-box {
+    padding: 3rem 7rem;
+  }
+}
+
+/* ******************** */
+/* BELOW 1200PX (LANDSCAPE TABLETS) */
+/* ******************** */
+@media (max-width: 72em) {
+  .section-how-2 .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-2-icons {
+    column-gap: 0;
+  }
+
+  .testimonial-container {
+    gap: 7.6rem;
+  }
+
+  .testimonial-icon,
+  .testimonial-icon-2,
+  .testimonial-icon-3 {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .sub-text-1 {
+    font-size: 2rem;
+  }
+
+  .sub-text-2 {
+    font-size: 1.2rem;
+  }
+
+  .video-btn {
+    font-size: 1.4rem;
+  }
+
+  .slider-icon {
+    font-size: 1.8rem;
+  }
+
+  .list-itm span {
+    font-size: 1.4rem;
+  }
+
+  .price-info {
+    font-size: 1.2rem;
+  }
+
+  .list-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .price-btn--3 {
+    font-size: 1.2rem;
+  }
+
+  .price-form--1,
+  .price-form--2,
+  .price-form--3 {
+    padding: 2rem 3.6rem;
+  }
+}
+
+/* ******************** */
+/* BELOW 944PX (Mobile Navigation) */
+/* ******************** */
+@media (max-width: 59em) {
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header {
+    padding: 6.4rem 2.8rem;
+    justify-content: space-between;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide Navigation */
+    /* Allow NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers  */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-list li:last-child {
+    margin-left: 0;
+  }
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    font-size: 3rem;
+  }
+}
+
+/* ******************** */
+/* BELOW 704PX (Smaller tablets) */
+/* ******************** */
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .hero,
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-how-2 .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero-text-box {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    gap: 0;
+  }
+
+  .section-hero .heading-primary {
+    font-size: 5.2rem;
+    font-weight: 400;
+    margin-top: 9.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .section-hero .hero-description {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero-img-box img {
+    margin-left: auto;
+    display: block;
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .container {
+    max-width: 100rem;
+    padding: 0 6.4rem;
+  }
+
+  .section-how .heading-secondary {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 3.2rem;
+    line-height: 1.4;
+  }
+
+  .how-flex {
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+
+  .section-how .subheading {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+
+  .how-1--btn {
+    padding: 1.4rem 2.4rem;
+    font-size: 1.6rem;
+    align-self: center;
+  }
+  .icon--box {
+    margin: 0 auto 3.2rem;
+  }
+
+  .ques {
+    text-align: center;
+  }
+
+  .how-text {
+    font-size: 1.8rem;
+  }
+
+  .how-btn {
+    font-weight: 700;
+  }
+
+  .market-img {
+    display: none;
+  }
+
+  .market {
+    padding: 3.2rem;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section-market .heading-secondary {
+    font-size: 2.4rem;
+  }
+
+  .main-text {
+    font-size: 4.4rem;
+    font-weight: 600;
+  }
+
+  .sub-text {
+    font-size: 1.4rem;
+  }
+
+  .testimonial-text-box {
+    gap: 2.4rem;
+  }
+
+  .section-testimonial .grid--2-cols {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-text-1 {
+    font-size: 1.6rem;
+  }
+
+  .sub-text-2 {
+    font-size: 1.1rem;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    padding: 2.4rem;
+    width: 30rem;
+  }
+
+  .section-how-2 .heading-secondary {
+    font-size: 3.4rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .section-how-2 .subheading {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: normal;
+  }
+
+  .how2-videos {
+    flex-direction: column;
+  }
+
+  .slider-icon {
+    display: none;
+  }
+
+  .video-headline {
+    font-size: 2rem;
+  }
+
+  .video-discription {
+    font-size: 1.4rem;
+  }
+
+  .download-heading {
+    font-size: 3rem;
+  }
+
+  .download-info {
+    font-size: 1.4rem;
+    margin-bottom: 4.4rem;
+  }
+
+  .section-pricing .main-text {
+    font-size: 3.2rem;
+  }
+
+  .review-container {
+    flex-direction: column;
+    gap: 4.8rem;
+    padding: 5rem;
+  }
+
+  .review-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .rev-description {
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.6rem;
+  }
+
+  .rv {
+    display: none;
+  }
+
+  .review-name {
+    justify-content: center;
+  }
+
+  .feature-mainhead {
+    font-size: 3.2rem;
+    max-width: 50rem;
+    margin: 0 auto 1.2rem;
+  }
+
+  .feature-subhead {
+    font-size: 1.4rem;
+  }
+
+  .feature-container,
+  .feature-container--2 {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2.8rem;
+  }
+
+  .f-img-10 {
+    grid-column: 2;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-img {
+    width: 80%;
+  }
+
+  .footer-info {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 40rem;
+  }
+
+  .logo-col {
+    align-items: center;
+  }
+  .footer-nav {
+    align-items: center;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 1.4rem;
+  }
+
+  .ftr-link:link,
+  .ftr-link:visited {
+    font-size: 1.4rem;
+  }
+
+  .cpyright-col {
+    flex-direction: column;
+    gap: 3.2rem;
+    grid-row: span 3;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
+
+/*
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
